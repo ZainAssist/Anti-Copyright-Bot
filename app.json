@@ -1,0 +1,40 @@
+{
+    "name": "A Telegram AntiCopyright in Group Bot by @The_Eternity_Soul.",
+    "description": "A Telegram Bot for No one can Copyright until I'm alive",
+    "keywords": [
+        "telegram",
+        "AntiCopyright",
+        "channel",
+        "Group",
+        "manager",
+        "bot"
+    ],
+    "repository": "https://github.com/ZainAssist/Anti-Copyright-bot",
+    "website": "https://telegram.dog/The_Eternity_Soul",
+    "success_url": "https://t.me/About_Zain",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather"
+        },
+        "DATABASE_URL": {
+            "description": "MongoDB URI for Saving Chat Settings."
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
